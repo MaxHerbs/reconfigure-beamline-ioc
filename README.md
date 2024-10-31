@@ -20,7 +20,7 @@ The script has three pre-requisits;
 
 1. A config file describing each malcolm-style IOC name and executable path. See `configurations/master.yaml` for reference on structure. 
 2. A path to a virtual enviroment. A valid venv is needed to for `run.sh`, which then provides the script with the correct tools for kubernetes etc.
-3. A path to a beamline-repo's `environment.sh`. This describes the full namespace and kubernetes config to allow the script to interact with the cluster.
+3. A path to a beamline-repo's `environment.sh`. This describes the full namespace and kubernetes config to allow the script to interact with the cluster.[The p99 service is available here](https://github.com/MaxHerbs/p99-services).
 
 To start the script;
 
