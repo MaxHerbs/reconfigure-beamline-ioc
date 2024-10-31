@@ -40,13 +40,12 @@ class ClusterHandler:
     def storeKubernetesConfig(self):
         if os.path.exists(KUBE_CONF_PATH) and os.listdir(KUBE_CONF_PATH):
             print("\n\n\n")
-            print("There is currently a restore config of the IOC states in the kubernetes cluster, but this may be out of date")
-            print("The ")
+            print("There is currently a restore point of the IOC states in the kubernetes cluster, but this may be out of date")
             chosen = False
             while not chosen:
                 print("Would you like to:")
-                print("1. Use the most recent config and continue with the script (Most likely option)")
-                print("2. Add a new restore config based on the current kubernetes IOC states and continue with the script")
+                print("1. Continue (Most likely option)")
+                print("2. Add a new restore post based on the current kubernetes IOC states and continue with the script")
                 print("3. Exit the script")
              
                 choice = input("Enter your choice (1,2,3): ") 
