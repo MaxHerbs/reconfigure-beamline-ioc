@@ -1,0 +1,29 @@
+iocs:
+  - name: PandA
+    iocName: BL99P-EA-IOC-03
+    executable: /dls_sw/prod/R3.14.12.7/ioc/BL99P/BL99P-EA-IOC-03/1-5/bin/linux-x86_64/stBL99P-EA-IOC-03.sh
+
+  - name: PandA2
+    iocName: BL99P-EA-IOC-06
+    executable: /dls_sw/work/R3.14.12.7/support/BL99P-BUILDER/iocs/BL99P-EA-IOC-06/bin/linux-x86_64/stBL99P-EA-IOC-06.sh
+
+  - name: Laser
+    iocName: BL99P-EA-IOC-02
+    executable: /dls_sw/prod/R3.14.12.7/ioc/BL99P/BL99P-EA-IOC-02/0-4/bin/linux-x86_64/stBL99P-EA-IOC-02.sh
+
+  - name: Andor2
+    iocName: BL99P-EA-IOC-05
+    executable: /dls_sw/prod/R3.14.12.7/ioc/BL99P/BL99P-EA-IOC-05/1-4
+
+  - name: Andor3
+    iocName: BL99P-EA-IOC-01
+    executable: /dls_sw/work/R3.14.12.7/support/BL99P-BUILDER/iocs/BL99P-EA-IOC-01/bin/linux-x86_64/stBL99P-EA-IOC-01.sh
+    safeRestart: 1
+
+  - name: Xspress Sim ADOdin
+    iocName: BL99P-EA-IOC-20
+    executable: /dls_sw/prod/R3.14.12.7/ioc/BL99P/BL99P-EA-IOC-20/1-0/bin/linux-x86_64/stBL99P-EA-IOC-20.sh
+
+  - name: p99-Stage
+    iocName: BL99P-MO-IOC-01
+    executable: /dls_sw/work/R3.14.12.7/support/BL99P-BUILDER/iocs/BL99P-MO-IOC-01/bin/linux-x86_64/stBL99P-MO-IOC-01.sh
