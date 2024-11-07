@@ -57,9 +57,9 @@ class ClusterHandler:
 
                 if choice == 1: 
                     return True
-                if choice == 2: 
+                elif choice == 2: 
                     chosen = True
-                if choice == 3: 
+                elif choice == 3: 
                     exit()
                 else: 
                     print("Invalid choice. Please enter 1, 2, or 3.")
@@ -118,7 +118,7 @@ class ClusterHandler:
             print("Running ", " ".join(cmd))
             response = subprocess.run(cmd, stdout = subprocess.PIPE, stderr = subprocess.PIPE)
             print(response.stdout.decode("utf-8"))
-                  
+                              
             if response.returncode != 0:
                 print(f"Error: Issue while restoring {ioc} kubernetes config")
                 print(response.stderr)

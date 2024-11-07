@@ -1,2 +1,4 @@
 venv
 p99-services
+*__pycache__*
+*.pyc

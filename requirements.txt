@@ -2,7 +2,6 @@ certifi==2024.8.30
 charset-normalizer==3.4.0
 click==8.1.7
 cothread==2.20.0
-edge-containers-cli==4.2.1
 idna==3.10
 Jinja2==3.1.4
 linkify-it-py==2.0.3
