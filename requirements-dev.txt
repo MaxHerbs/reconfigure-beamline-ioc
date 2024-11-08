@@ -1,3 +1,0 @@
-cothread==2.20.0
-numpy==1.21.6
-PyYAML==6.0.1

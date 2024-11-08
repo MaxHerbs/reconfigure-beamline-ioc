@@ -18,8 +18,11 @@ echo "config path: $1"
 echo "venv path: $2"
 echo "EC ENV PATH: $3"
 
+sed -i 's/return 1//' $3
+
 source $2
 source $3
+
 
 eval $(ssh-agent)
 ssh-add ~/.ssh/id_rsa
