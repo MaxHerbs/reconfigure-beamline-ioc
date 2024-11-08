@@ -16,6 +16,21 @@ Script to convert between new container-style kubernetes IOC and old malcolm for
 `run.sh` is executable to start the script. This then verifies paths and includes the files necessary for `main.py` to run. Both `IocController.py` and `ClusterHandler.py` provide classes to with their own functionality, relating to configuring legacy IOC's and managing the kubernetes IOC's.
 
 # Running the Script
+
+### First Time Setup:
+Running the following should fetch all the pre-requesits, and spit out the correct bash command to run the script
+
+```bash
+$ bash first-time-setup.sh
+```
+You will still need to create your own config file for restoring malcolm scans, but this repository will provide a template to base your own on. The script will output something like the following, so change config path (the first param) as necessary.
+
+```bash
+RUN:
+bash run.sh configurations/master.yaml venv/bin/activate p99-services/environment.sh
+```
+
+
 The script has three pre-requisits;
 
 1. A config file describing each malcolm-style IOC name and executable path. See `configurations/master.yaml` for reference on structure. 
@@ -26,7 +41,7 @@ To start the script;
 
 ```bash 
 # bash run.sh {path to config yaml} {path to venv} {path to beamline environment}
-bash run.sh configurations/master.yaml venv/bin/activate /scratch/$USER/p99-services/environment.sh
+$ bash run.sh configurations/master.yaml venv/bin/activate /scratch/$USER/p99-services/environment.sh
 ```
 
 # Options

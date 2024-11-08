@@ -3,7 +3,8 @@ echo "Running first time setup..."
 
 python -m venv venv
 source venv/bin/activate
-pip install -r requirements.txt
+pip install --upgrade pip
+pip install -r requirements-dev.txt
 
 git clone git@github.com:MaxHerbs/p99-services.git
 
