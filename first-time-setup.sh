@@ -6,7 +6,7 @@ source venv/bin/activate
 pip install --upgrade pip
 pip install -r requirements.txt
 
-git clone git@github.com:MaxHerbs/p99-services.git
+git clone https://github.com/epics-containers/p99-services
 
 echo "First time setup complete."
 echo "To run the program, use the following command:"
